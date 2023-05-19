@@ -1,0 +1,948 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      
+      <meta name="generator" content="Railroad Diagram Generator 1.62">
+      
+      <style type="text/css">
+    ::-moz-selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }
+    ::selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }
+    .ebnf a, .grammar a
+    {
+      text-decoration: none;
+    }
+    .ebnf a:hover, .grammar a:hover
+    {
+      color: #050400;
+      text-decoration: underline;
+    }
+    .signature
+    {
+      color: #806600;
+      font-size: 11px;
+      text-align: right;
+    }
+    body
+    {
+      font: normal 12px Verdana, sans-serif;
+      color: #0F0C00;
+      background: #FFFCF0;
+    }
+    a:link, a:visited
+    {
+      color: #0F0C00;
+    }
+    a:link.signature, a:visited.signature
+    {
+      color: #806600;
+    }
+    a.button, #tabs li a
+    {
+      padding: 0.25em 0.5em;
+      border: 1px solid #806600;
+      background: #F1E8C6;
+      color: #806600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover, #tabs li a:hover
+    {
+      color: #050400;
+      background: #FFF6D1;
+      border-color: #050400;
+    }
+    #tabs
+    {
+      padding: 3px 10px;
+      margin-left: 0;
+      margin-top: 58px;
+      border-bottom: 1px solid #0F0C00;
+    }
+    #tabs li
+    {
+      list-style: none;
+      margin-left: 5px;
+      display: inline;
+    }
+    #tabs li a
+    {
+      border-bottom: 1px solid #0F0C00;
+    }
+    #tabs li a.active
+    {
+      color: #0F0C00;
+      background: #FFFCF0;
+      border-color: #0F0C00;
+      border-bottom: 1px solid #FFFCF0;
+      outline: none;
+    }
+    #divs div
+    {
+      display: none;
+      overflow:auto;
+    }
+    #divs div.active
+    {
+      display: block;
+    }
+    #text
+    {
+      border-color: #806600;
+      background: #FFFEFA;
+      color: #050400;
+    }
+    .small
+    {
+      vertical-align: top;
+      text-align: right;
+      font-size: 9px;
+      font-weight: normal;
+      line-height: 120%;
+    }
+    td.small
+    {
+      padding-top: 0px;
+    }
+    .hidden
+    {
+      visibility: hidden;
+    }
+    td:hover .hidden
+    {
+      visibility: visible;
+    }
+    div.download
+    {
+      display: none;
+      background: #FFFCF0;
+      position: absolute;
+      right: 34px;
+      top: 94px;
+      padding: 10px;
+      border: 1px dotted #0F0C00;
+    }
+    #divs div.ebnf, .ebnf code
+    {
+      display: block;
+      padding: 10px;
+      background: #FFF6D1;
+      width: 992px;
+    }
+    #divs div.grammar
+    {
+      display: block;
+      padding-left: 16px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      background: #FFF6D1;
+    }
+    pre
+    {
+      margin: 0px;
+    }
+    .ebnf div
+    {
+      padding-left: 13ch;
+      text-indent: -13ch;
+    }
+    .ebnf code, .grammar code, textarea, pre
+    {
+      font:12px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    }
+    tr.option-line td:first-child
+    {
+      text-align: right
+    }
+    tr.option-text td
+    {
+      padding-bottom: 10px
+    }
+    table.palette
+    {
+      border-top: 1px solid #050400;
+      border-right: 1px solid #050400;
+      margin-bottom: 4px
+    }
+    td.palette
+    {
+      border-bottom: 1px solid #050400;
+      border-left: 1px solid #050400;
+    }
+    a.palette
+    {
+      padding: 2px 3px 2px 10px;
+      text-decoration: none;
+    }
+    .palette
+    {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+   </head>
+   
+   <body>
+      
+      <p style="font-size: 14px; font-weight:bold"><a name="let">let:</a></p><img border="0" src="diagram/let.png" height="81" width="161"><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#let" title="let">let</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= [A-Za-z]</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#alphanum" title="alphanum">alphanum</a></li>
+            
+            <li><a href="#ident" title="ident">ident</a></li>
+            
+            <li><a href="#sym_name" title="sym_name">sym_name</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="dig">dig:</a></p><img border="0" src="diagram/dig.png" height="37" width="121"><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#dig" title="dig">dig</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= [0-9]</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#alphanum" title="alphanum">alphanum</a></li>
+            
+            <li><a href="#arith_exp" title="arith_exp">arith_exp</a></li>
+            
+            <li><a href="#dec_num" title="dec_num">dec_num</a></li>
+            
+            <li><a href="#gb_date" title="gb_date">gb_date</a></li>
+            
+            <li><a href="#gb_time" title="gb_time">gb_time</a></li>
+            
+            <li><a href="#hex_num" title="hex_num">hex_num</a></li>
+            
+            <li><a href="#ident" title="ident">ident</a></li>
+            
+            <li><a href="#integer" title="integer">integer</a></li>
+            
+            <li><a href="#keyed_num" title="keyed_num">keyed_num</a></li>
+            
+            <li><a href="#num_str" title="num_str">num_str</a></li>
+            
+            <li><a href="#sym_name" title="sym_name">sym_name</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="ident">ident:</a></p><img border="0" src="diagram/ident.png" height="115" width="193" usemap="#ident.map"><map name="ident.map"><area shape="rect" coords="29,79,65,111" href="#let" title="let"><area shape="rect" coords="105,45,141,77" href="#let" title="let"><area shape="rect" coords="105,1,143,33" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#ident" title="ident">ident</a>&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#let" title="let">let</a> ( <a href="#let" title="let">let</a> | <a href="#dig" title="dig">dig</a> )*</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#aid_name" title="aid_name">aid_name</a></li>
+            
+            <li><a href="#cmd" title="cmd">cmd</a></li>
+            
+            <li><a href="#ctag" title="ctag">ctag</a></li>
+            
+            <li><a href="#idr_ind" title="idr_ind">idr_ind</a></li>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            
+            <li><a href="#param_name" title="param_name">param_name</a></li>
+            
+            <li><a href="#tid" title="tid">tid</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="sym_name">sym_name:</a></p><img border="0" src="diagram/sym_name.png" height="219" width="371" usemap="#sym_name.map"><map name="sym_name.map"><area shape="rect" coords="49,17,87,49" href="#dig" title="dig"><area shape="rect" coords="167,51,203,83" href="#let" title="let"><area shape="rect" coords="263,17,301,49" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#sym_name" title="sym_name">sym_name</a>&nbsp;::= <a href="#dig" title="dig">dig</a>* ( ( <a href="#let" title="let">let</a> | '+' | '#' | '%' ) <a href="#dig" title="dig">dig</a>* )+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="alphanum">alphanum:</a></p><img border="0" src="diagram/alphanum.png" height="97" width="177" usemap="#alphanum.map"><map name="alphanum.map"><area shape="rect" coords="69,17,105,49" href="#let" title="let"><area shape="rect" coords="69,61,107,93" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#alphanum" title="alphanum">alphanum</a>&nbsp;::= ( <a href="#let" title="let">let</a> | <a href="#dig" title="dig">dig</a> )+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="dec_num">dec_num:</a></p><img border="0" src="diagram/dec_num.png" height="103" width="413" usemap="#dec_num.map"><map name="dec_num.map"><area shape="rect" coords="143,1,181,33" href="#dig" title="dig"><area shape="rect" coords="325,35,363,67" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#dec_num" title="dec_num">dec_num</a>&nbsp;&nbsp;::= "D'"? <a href="#dig" title="dig">dig</a>* '.'? <a href="#dig" title="dig">dig</a>+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#ctag" title="ctag">ctag</a></li>
+            
+            <li><a href="#inc" title="inc">inc</a></li>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            
+            <li><a href="#order_nr" title="order_nr">order_nr</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="arith_exp">arith_exp:</a></p><img border="0" src="diagram/arith_exp.png" height="147" width="501" usemap="#arith_exp.map"><map name="arith_exp.map"><area shape="rect" coords="185,1,223,33" href="#dig" title="dig"><area shape="rect" coords="367,35,405,67" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#arith_exp" title="arith_exp">arith_exp</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= '(' ( '+' | '-' )? <a href="#dig" title="dig">dig</a>* '.'? <a href="#dig" title="dig">dig</a>+ ')'</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="hex_num">hex_num:</a></p><img border="0" src="diagram/hex_num.png" height="97" width="293" usemap="#hex_num.map"><map name="hex_num.map"><area shape="rect" coords="163,17,201,49" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#hex_num" title="hex_num">hex_num</a>&nbsp;&nbsp;::= "H'"? ( <a href="#dig" title="dig">dig</a> | [A-F] )+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="oct_num">oct_num:</a></p><img border="0" src="diagram/oct_num.png" height="85" width="255"><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#oct_num" title="oct_num">oct_num</a>&nbsp;&nbsp;::= "O'"? [0-7]+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="bin_num">bin_num:</a></p><img border="0" src="diagram/bin_num.png" height="97" width="259"><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#bin_num" title="bin_num">bin_num</a>&nbsp;&nbsp;::= "B'"? ( '0' | '1' )+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="keyed_num">keyed_num:</a></p><img border="0" src="diagram/keyed_num.png" height="185" width="295" usemap="#keyed_num.map"><map name="keyed_num.map"><area shape="rect" coords="161,17,199,49" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#keyed_num" title="keyed_num">keyed_num</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= "K'"? ( <a href="#dig" title="dig">dig</a> | [A-D*#] )+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="num_str">num_str:</a></p><img border="0" src="diagram/num_str.png" height="53" width="137" usemap="#num_str.map"><map name="num_str.map"><area shape="rect" coords="49,17,87,49" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#num_str" title="num_str">num_str</a>&nbsp;&nbsp;::= <a href="#dig" title="dig">dig</a>+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            
+            <li><a href="#integer" title="integer">integer</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="integer">integer:</a></p><img border="0" src="diagram/integer.png" height="179" width="359" usemap="#integer.map"><map name="integer.map"><area shape="rect" coords="49,1,121,33" href="#num_str" title="num_str"><area shape="rect" coords="205,67,243,99" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#integer" title="integer">integer</a>&nbsp;&nbsp;::= <a href="#num_str" title="num_str">num_str</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| '(' ( '+' | '-' )? <a href="#dig" title="dig">dig</a>+ ')'</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="text_str">text_str:</a></p><img border="0" src="diagram/text_str.png" height="159" width="481" usemap="#text_str.map"><map name="text_str.map"><area shape="rect" coords="95,1,385,33" href="#any_character_except_quot_or_backslash" title="any_character_except_quot_or_backslash"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#text_str" title="text_str">text_str</a>&nbsp;::= '"' ( '\"' | '\\' | <a href="#any_character_except_quot_or_backslash" title="any_character_except_quot_or_backslash">any_character_except_quot_or_backslash</a> )* '"'</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></li>
+            
+            <li><a href="#tid" title="tid">tid</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="param_value_complex">param_value_complex:</a></p><img border="0" src="diagram/param_value_complex.png" height="81" width="183" usemap="#param_value_complex.map"><map name="param_value_complex.map"><area shape="rect" coords="49,45,133,77" href="#seq_chain" title="seq_chain"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#param_value_complex" title="param_value_complex">param_value_complex</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#seq_chain" title="seq_chain">seq_chain</a> ( '&amp;' <a href="#seq_chain" title="seq_chain">seq_chain</a> )*</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#param_value" title="param_value">param_value</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="seq_chain">seq_chain:</a></p><img border="0" src="diagram/seq_chain.png" height="81" width="191" usemap="#seq_chain.map"><map name="seq_chain.map"><area shape="rect" coords="49,1,141,33" href="#simple_seq" title="simple_seq"><area shape="rect" coords="49,45,135,77" href="#cmp_chain" title="cmp_chain"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#seq_chain" title="seq_chain">seq_chain</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#simple_seq" title="simple_seq">simple_seq</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#cmp_chain" title="cmp_chain">cmp_chain</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#param_value_complex" title="param_value_complex">param_value_complex</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="simple_seq">simple_seq:</a></p><img border="0" src="diagram/simple_seq.png" height="113" width="489" usemap="#simple_seq.map"><map name="simple_seq.map"><area shape="rect" coords="49,1,163,33" href="#info_unit_class" title="info_unit_class"><area shape="rect" coords="49,45,129,77" href="#from_unit" title="from_unit"><area shape="rect" coords="209,45,273,77" href="#to_unit" title="to_unit"><area shape="rect" coords="381,77,419,109" href="#inc" title="inc"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#simple_seq" title="simple_seq">simple_seq</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#info_unit_class" title="info_unit_class">info_unit_class</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#from_unit" title="from_unit">from_unit</a> '&amp;&amp;' <a href="#to_unit" title="to_unit">to_unit</a> ( '.++.' <a href="#inc" title="inc">inc</a> )?</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#seq_chain" title="seq_chain">seq_chain</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="from_unit">from_unit:</a></p><img border="0" src="diagram/from_unit.png" height="37" width="173" usemap="#from_unit.map"><map name="from_unit.map"><area shape="rect" coords="29,1,143,33" href="#info_unit_class" title="info_unit_class"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#from_unit" title="from_unit">from_unit</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#info_unit_class" title="info_unit_class">info_unit_class</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#linked_seq" title="linked_seq">linked_seq</a></li>
+            
+            <li><a href="#simple_seq" title="simple_seq">simple_seq</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="to_unit">to_unit:</a></p><img border="0" src="diagram/to_unit.png" height="37" width="173" usemap="#to_unit.map"><map name="to_unit.map"><area shape="rect" coords="29,1,143,33" href="#info_unit_class" title="info_unit_class"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#to_unit" title="to_unit">to_unit</a>&nbsp;&nbsp;::= <a href="#info_unit_class" title="info_unit_class">info_unit_class</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#cmp_seq" title="cmp_seq">cmp_seq</a></li>
+            
+            <li><a href="#linked_seq" title="linked_seq">linked_seq</a></li>
+            
+            <li><a href="#simple_seq" title="simple_seq">simple_seq</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="inc">inc:</a></p><img border="0" src="diagram/inc.png" height="37" width="137" usemap="#inc.map"><map name="inc.map"><area shape="rect" coords="29,1,107,33" href="#dec_num" title="dec_num"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#inc" title="inc">inc</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#dec_num" title="dec_num">dec_num</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#cmp_seq" title="cmp_seq">cmp_seq</a></li>
+            
+            <li><a href="#linked_seq" title="linked_seq">linked_seq</a></li>
+            
+            <li><a href="#simple_seq" title="simple_seq">simple_seq</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="cmp_chain">cmp_chain:</a></p><img border="0" src="diagram/cmp_chain.png" height="69" width="379" usemap="#cmp_chain.map"><map name="cmp_chain.map"><area shape="rect" coords="29,17,105,49" href="#cmp_seq" title="cmp_seq"><area shape="rect" coords="221,17,309,49" href="#linked_seq" title="linked_seq"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#cmp_chain" title="cmp_chain">cmp_chain</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#cmp_seq" title="cmp_seq">cmp_seq</a> ( '&amp;-' <a href="#linked_seq" title="linked_seq">linked_seq</a> )*</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#seq_chain" title="seq_chain">seq_chain</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="cmp_seq">cmp_seq:</a></p><img border="0" src="diagram/cmp_seq.png" height="101" width="489" usemap="#cmp_seq.map"><map name="cmp_seq.map"><area shape="rect" coords="29,1,103,33" href="#cmp_arg" title="cmp_arg"><area shape="rect" coords="209,33,273,65" href="#to_unit" title="to_unit"><area shape="rect" coords="381,65,419,97" href="#inc" title="inc"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#cmp_seq" title="cmp_seq">cmp_seq</a>&nbsp;&nbsp;::= <a href="#cmp_arg" title="cmp_arg">cmp_arg</a> ( '&amp;&amp;-' <a href="#to_unit" title="to_unit">to_unit</a> ( '.++.' <a href="#inc" title="inc">inc</a> )? )?</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#cmp_chain" title="cmp_chain">cmp_chain</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="cmp_arg">cmp_arg:</a></p><img border="0" src="diagram/cmp_arg.png" height="53" width="393" usemap="#cmp_arg.map"><map name="cmp_arg.map"><area shape="rect" coords="29,17,143,49" href="#info_unit_class" title="info_unit_class"><area shape="rect" coords="229,17,343,49" href="#info_unit_class" title="info_unit_class"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#cmp_arg" title="cmp_arg">cmp_arg</a>&nbsp;&nbsp;::= <a href="#info_unit_class" title="info_unit_class">info_unit_class</a> ( '-' <a href="#info_unit_class" title="info_unit_class">info_unit_class</a> )+</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#cmp_seq" title="cmp_seq">cmp_seq</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="linked_seq">linked_seq:</a></p><img border="0" src="diagram/linked_seq.png" height="113" width="495" usemap="#linked_seq.map"><map name="linked_seq.map"><area shape="rect" coords="49,1,163,33" href="#info_unit_class" title="info_unit_class"><area shape="rect" coords="49,45,129,77" href="#from_unit" title="from_unit"><area shape="rect" coords="215,45,279,77" href="#to_unit" title="to_unit"><area shape="rect" coords="387,77,425,109" href="#inc" title="inc"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#linked_seq" title="linked_seq">linked_seq</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#info_unit_class" title="info_unit_class">info_unit_class</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#from_unit" title="from_unit">from_unit</a> '&amp;&amp;-' <a href="#to_unit" title="to_unit">to_unit</a> ( '.++.' <a href="#inc" title="inc">inc</a> )?</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#cmp_chain" title="cmp_chain">cmp_chain</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="param_value">param_value:</a></p><img border="0" src="diagram/param_value.png" height="37" width="221" usemap="#param_value.map"><map name="param_value.map"><area shape="rect" coords="29,1,191,33" href="#param_value_complex" title="param_value_complex"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#param_value" title="param_value">param_value</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#param_value_complex" title="param_value_complex">param_value_complex</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#aid_unit" title="aid_unit">aid_unit</a></li>
+            
+            <li><a href="#name_def_param" title="name_def_param">name_def_param</a></li>
+            
+            <li><a href="#pos_def_param" title="pos_def_param">pos_def_param</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="info_unit_class">info_unit_class:</a></p><img border="0" src="diagram/info_unit_class.png" height="521" width="193" usemap="#info_unit_class.map"><map name="info_unit_class.map"><area shape="rect" coords="49,1,101,33" href="#ident" title="ident"><area shape="rect" coords="49,45,137,77" href="#sym_name" title="sym_name"><area shape="rect" coords="49,89,131,121" href="#alphanum" title="alphanum"><area shape="rect" coords="49,133,127,165" href="#dec_num" title="dec_num"><area shape="rect" coords="49,177,129,209" href="#arith_exp" title="arith_exp"><area shape="rect" coords="49,221,127,253" href="#hex_num" title="hex_num"><area shape="rect" coords="49,265,123,297" href="#oct_num" title="oct_num"><area shape="rect" coords="49,309,123,341" href="#bin_num" title="bin_num"><area shape="rect" coords="49,353,143,385" href="#keyed_num" title="keyed_num"><area shape="rect" coords="49,397,121,429" href="#num_str" title="num_str"><area shape="rect" coords="49,441,113,473" href="#integer" title="integer"><area shape="rect" coords="49,485,119,517" href="#text_str" title="text_str"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#info_unit_class" title="info_unit_class">info_unit_class</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#ident" title="ident">ident</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#sym_name" title="sym_name">sym_name</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#alphanum" title="alphanum">alphanum</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#dec_num" title="dec_num">dec_num</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#arith_exp" title="arith_exp">arith_exp</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#hex_num" title="hex_num">hex_num</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#oct_num" title="oct_num">oct_num</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#bin_num" title="bin_num">bin_num</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#keyed_num" title="keyed_num">keyed_num</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#num_str" title="num_str">num_str</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#integer" title="integer">integer</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#text_str" title="text_str">text_str</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#cmp_arg" title="cmp_arg">cmp_arg</a></li>
+            
+            <li><a href="#from_unit" title="from_unit">from_unit</a></li>
+            
+            <li><a href="#linked_seq" title="linked_seq">linked_seq</a></li>
+            
+            <li><a href="#simple_seq" title="simple_seq">simple_seq</a></li>
+            
+            <li><a href="#to_unit" title="to_unit">to_unit</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="input">input:</a></p><img border="0" src="diagram/input.png" height="183" width="957" usemap="#input.map"><map name="input.map"><area shape="rect" coords="29,17,75,49" href="#cmd" title="cmd"><area shape="rect" coords="159,49,195,81" href="#tid" title="tid"><area shape="rect" coords="299,49,337,81" href="#aid" title="aid"><area shape="rect" coords="421,17,467,49" href="#ctag" title="ctag"><area shape="rect" coords="571,49,639,81" href="#general" title="general"><area shape="rect" coords="783,49,853,81" href="#payload" title="payload"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#input" title="input">input</a>&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#cmd" title="cmd">cmd</a> ':' <a href="#tid" title="tid">tid</a>? ':' <a href="#aid" title="aid">aid</a>? ':' <a href="#ctag" title="ctag">ctag</a> ( ':' <a href="#general" title="general">general</a>? ( ':' <a href="#payload" title="payload">payload</a>? )* )? ';'</div></code></div>
+         </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="cmd">cmd:</a></p><img border="0" src="diagram/cmd.png" height="145" width="471" usemap="#cmd.map"><map name="cmd.map"><area shape="rect" coords="29,1,81,33" href="#ident" title="ident"><area shape="rect" coords="167,33,219,65" href="#ident" title="ident"><area shape="rect" coords="349,65,401,97" href="#ident" title="ident"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#cmd" title="cmd">cmd</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#ident" title="ident">ident</a> ( '-' <a href="#ident" title="ident">ident</a> ( ( '-' | '#' ) <a href="#ident" title="ident">ident</a> )? )?</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#input" title="input">input</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="tid">tid:</a></p><img border="0" src="diagram/tid.png" height="125" width="191" usemap="#tid.map"><map name="tid.map"><area shape="rect" coords="69,45,121,77" href="#ident" title="ident"><area shape="rect" coords="49,89,119,121" href="#text_str" title="text_str"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#tid" title="tid">tid</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#ident" title="ident">ident</a> ( '-' <a href="#ident" title="ident">ident</a> )*</div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#text_str" title="text_str">text_str</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#input" title="input">input</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="aid">aid:</a></p><img border="0" src="diagram/aid.png" height="81" width="171" usemap="#aid.map"><map name="aid.map"><area shape="rect" coords="49,45,121,77" href="#aid_unit" title="aid_unit"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#aid" title="aid">aid</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#aid_unit" title="aid_unit">aid_unit</a> ( ',' <a href="#aid_unit" title="aid_unit">aid_unit</a> )*</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#input" title="input">input</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="aid_unit">aid_unit:</a></p><img border="0" src="diagram/aid_unit.png" height="69" width="353" usemap="#aid_unit.map"><map name="aid_unit.map"><area shape="rect" coords="49,33,131,65" href="#aid_name" title="aid_name"><area shape="rect" coords="221,1,323,33" href="#param_value" title="param_value"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#aid_unit" title="aid_unit">aid_unit</a>&nbsp;::= ( <a href="#aid_name" title="aid_name">aid_name</a> '=' )? <a href="#param_value" title="param_value">param_value</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#aid" title="aid">aid</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="aid_name">aid_name:</a></p><img border="0" src="diagram/aid_name.png" height="37" width="111" usemap="#aid_name.map"><map name="aid_name.map"><area shape="rect" coords="29,1,81,33" href="#ident" title="ident"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#aid_name" title="aid_name">aid_name</a>&nbsp;::= <a href="#ident" title="ident">ident</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#aid_unit" title="aid_unit">aid_unit</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="ctag">ctag:</a></p><img border="0" src="diagram/ctag.png" height="81" width="177" usemap="#ctag.map"><map name="ctag.map"><area shape="rect" coords="49,1,101,33" href="#ident" title="ident"><area shape="rect" coords="49,45,127,77" href="#dec_num" title="dec_num"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#ctag" title="ctag">ctag</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#ident" title="ident">ident</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#dec_num" title="dec_num">dec_num</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#input" title="input">input</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="general_block">general_block:</a></p><img border="0" src="diagram/general_block.png" height="125" width="241" usemap="#general_block.map"><map name="general_block.map"><area shape="rect" coords="49,45,179,77" href="#pos_def_gen_blk" title="pos_def_gen_blk"><area shape="rect" coords="49,89,191,121" href="#name_def_gen_blk" title="name_def_gen_blk"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#general_block" title="general_block">general_block</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ''</div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#pos_def_gen_blk" title="pos_def_gen_blk">pos_def_gen_blk</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#name_def_gen_blk" title="name_def_gen_blk">name_def_gen_blk</a></div></code></div>
+         </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="pos_def_gen_blk">pos_def_gen_blk:</a></p><img border="0" src="diagram/pos_def_gen_blk.png" height="69" width="875" usemap="#pos_def_gen_blk.map"><map name="pos_def_gen_blk.map"><area shape="rect" coords="49,33,123,65" href="#order_nr" title="order_nr"><area shape="rect" coords="227,33,299,65" href="#gb_date" title="gb_date"><area shape="rect" coords="403,33,475,65" href="#gb_time" title="gb_time"><area shape="rect" coords="579,33,657,65" href="#cont_flag" title="cont_flag"><area shape="rect" coords="761,33,825,65" href="#idr_ind" title="idr_ind"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#pos_def_gen_blk" title="pos_def_gen_blk">pos_def_gen_blk</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#order_nr" title="order_nr">order_nr</a>? ',' <a href="#gb_date" title="gb_date">gb_date</a>? ',' <a href="#gb_time" title="gb_time">gb_time</a>? ',' <a href="#cont_flag" title="cont_flag">cont_flag</a>? ( ',' <a href="#idr_ind" title="idr_ind">idr_ind</a> )?</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#general_block" title="general_block">general_block</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="name_def_gen_blk">name_def_gen_blk:</a></p><img border="0" src="diagram/name_def_gen_blk.png" height="155" width="923" usemap="#name_def_gen_blk.map"><map name="name_def_gen_blk.map"><area shape="rect" coords="159,33,233,65" href="#order_nr" title="order_nr"><area shape="rect" coords="463,33,535,65" href="#gb_date" title="gb_date"><area shape="rect" coords="763,33,835,65" href="#gb_time" title="gb_time"><area shape="rect" coords="475,119,553,151" href="#cont_flag" title="cont_flag"><area shape="rect" coords="809,119,873,151" href="#idr_ind" title="idr_ind"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#name_def_gen_blk" title="name_def_gen_blk">name_def_gen_blk</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ( 'ON' '=' <a href="#order_nr" title="order_nr">order_nr</a> )? ',' ( 'DATE' '=' <a href="#gb_date" title="gb_date">gb_date</a> )? ',' ( 'TIME' '=' <a href="#gb_time" title="gb_time">gb_time</a> )? ',' ( 'CF' '=' <a href="#cont_flag" title="cont_flag">cont_flag</a> )? ( ',' 'RTRVIND' '=' <a href="#idr_ind" title="idr_ind">idr_ind</a> )?</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#general_block" title="general_block">general_block</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="order_nr">order_nr:</a></p><img border="0" src="diagram/order_nr.png" height="37" width="137" usemap="#order_nr.map"><map name="order_nr.map"><area shape="rect" coords="29,1,107,33" href="#dec_num" title="dec_num"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#order_nr" title="order_nr">order_nr</a>&nbsp;::= <a href="#dec_num" title="dec_num">dec_num</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#name_def_gen_blk" title="name_def_gen_blk">name_def_gen_blk</a></li>
+            
+            <li><a href="#pos_def_gen_blk" title="pos_def_gen_blk">pos_def_gen_blk</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="gb_date">gb_date:</a></p><img border="0" src="diagram/gb_date.png" height="37" width="479" usemap="#gb_date.map"><map name="gb_date.map"><area shape="rect" coords="29,1,67,33" href="#dig" title="dig"><area shape="rect" coords="87,1,125,33" href="#dig" title="dig"><area shape="rect" coords="191,1,229,33" href="#dig" title="dig"><area shape="rect" coords="249,1,287,33" href="#dig" title="dig"><area shape="rect" coords="353,1,391,33" href="#dig" title="dig"><area shape="rect" coords="411,1,449,33" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#gb_date" title="gb_date">gb_date</a>&nbsp;&nbsp;::= <a href="#dig" title="dig">dig</a> <a href="#dig" title="dig">dig</a> '-' <a href="#dig" title="dig">dig</a> <a href="#dig" title="dig">dig</a> '-' <a href="#dig" title="dig">dig</a> <a href="#dig" title="dig">dig</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#name_def_gen_blk" title="name_def_gen_blk">name_def_gen_blk</a></li>
+            
+            <li><a href="#pos_def_gen_blk" title="pos_def_gen_blk">pos_def_gen_blk</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="gb_time">gb_time:</a></p><img border="0" src="diagram/gb_time.png" height="37" width="479" usemap="#gb_time.map"><map name="gb_time.map"><area shape="rect" coords="29,1,67,33" href="#dig" title="dig"><area shape="rect" coords="87,1,125,33" href="#dig" title="dig"><area shape="rect" coords="191,1,229,33" href="#dig" title="dig"><area shape="rect" coords="249,1,287,33" href="#dig" title="dig"><area shape="rect" coords="353,1,391,33" href="#dig" title="dig"><area shape="rect" coords="411,1,449,33" href="#dig" title="dig"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#gb_time" title="gb_time">gb_time</a>&nbsp;&nbsp;::= <a href="#dig" title="dig">dig</a> <a href="#dig" title="dig">dig</a> '-' <a href="#dig" title="dig">dig</a> <a href="#dig" title="dig">dig</a> '-' <a href="#dig" title="dig">dig</a> <a href="#dig" title="dig">dig</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#name_def_gen_blk" title="name_def_gen_blk">name_def_gen_blk</a></li>
+            
+            <li><a href="#pos_def_gen_blk" title="pos_def_gen_blk">pos_def_gen_blk</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="cont_flag">cont_flag:</a></p><img border="0" src="diagram/cont_flag.png" height="81" width="127"><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#cont_flag" title="cont_flag">cont_flag</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= '0'</div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| '1'</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#name_def_gen_blk" title="name_def_gen_blk">name_def_gen_blk</a></li>
+            
+            <li><a href="#pos_def_gen_blk" title="pos_def_gen_blk">pos_def_gen_blk</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="idr_ind">idr_ind:</a></p><img border="0" src="diagram/idr_ind.png" height="81" width="151" usemap="#idr_ind.map"><map name="idr_ind.map"><area shape="rect" coords="49,45,101,77" href="#ident" title="ident"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#idr_ind" title="idr_ind">idr_ind</a>&nbsp;&nbsp;::= <a href="#ident" title="ident">ident</a> ( '-' <a href="#ident" title="ident">ident</a> )*</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#name_def_gen_blk" title="name_def_gen_blk">name_def_gen_blk</a></li>
+            
+            <li><a href="#pos_def_gen_blk" title="pos_def_gen_blk">pos_def_gen_blk</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="payload_block">payload_block:</a></p><img border="0" src="diagram/payload_block.png" height="169" width="271" usemap="#payload_block.map"><map name="payload_block.map"><area shape="rect" coords="69,45,189,77" href="#pos_def_param" title="pos_def_param"><area shape="rect" coords="69,133,201,165" href="#name_def_param" title="name_def_param"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#payload_block" title="payload_block">payload_block</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#pos_def_param" title="pos_def_param">pos_def_param</a> ( ',' <a href="#pos_def_param" title="pos_def_param">pos_def_param</a> )*</div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#name_def_param" title="name_def_param">name_def_param</a> ( ',' <a href="#name_def_param" title="name_def_param">name_def_param</a> )*</div></code></div>
+         </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="pos_def_param">pos_def_param:</a></p><img border="0" src="diagram/pos_def_param.png" height="113" width="415" usemap="#pos_def_param.map"><map name="pos_def_param.map"><area shape="rect" coords="69,77,173,109" href="#param_name" title="param_name"><area shape="rect" coords="263,45,365,77" href="#param_value" title="param_value"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#pos_def_param" title="pos_def_param">pos_def_param</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ''</div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| ( <a href="#param_name" title="param_name">param_name</a> '=' )? <a href="#param_value" title="param_value">param_value</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#payload_block" title="payload_block">payload_block</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="name_def_param">name_def_param:</a></p><img border="0" src="diagram/name_def_param.png" height="37" width="335" usemap="#name_def_param.map"><map name="name_def_param.map"><area shape="rect" coords="29,1,133,33" href="#param_name" title="param_name"><area shape="rect" coords="203,1,305,33" href="#param_value" title="param_value"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#name_def_param" title="name_def_param">name_def_param</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#param_name" title="param_name">param_name</a> '=' <a href="#param_value" title="param_value">param_value</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#payload_block" title="payload_block">payload_block</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="param_name">param_name:</a></p><img border="0" src="diagram/param_name.png" height="37" width="111" usemap="#param_name.map"><map name="param_name.map"><area shape="rect" coords="29,1,81,33" href="#ident" title="ident"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#param_name" title="param_name">param_name</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= <a href="#ident" title="ident">ident</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#name_def_param" title="name_def_param">name_def_param</a></li>
+            
+            <li><a href="#pos_def_param" title="pos_def_param">pos_def_param</a></li>
+            </ul>
+         </p><br><hr>
+      
+      <p>
+         
+         <table border="0" class="signature">
+            
+            <tr>
+               
+               <td style="width: 100%">&nbsp;</td>
+               
+               <td valign="top">
+                  
+                  <nobr class="signature">... generated by <a name="Railroad-Diagram-Generator" class="signature" title="https://www.bottlecaps.de/rr/ui" href="https://www.bottlecaps.de/rr/ui" target="_blank">RR - Railroad Diagram Generator</a></nobr>
+                  </td>
+               
+               <td><a name="Railroad-Diagram-Generator" title="https://www.bottlecaps.de/rr/ui" href="https://www.bottlecaps.de/rr/ui" target="_blank"><img border="0" src="diagram/rr-1.62.png" height="16" width="16"></a></td>
+               </tr>
+            </table>
+         </p>
+      </body>
+   </html>
